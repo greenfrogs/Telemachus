@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Telemachus;
+using Telemachus.DataLinkHandlers;
 
 namespace TelemachusTest
 {
@@ -19,14 +20,14 @@ namespace TelemachusTest
             Telemachus.VesselChangeDetector vesselChangeDetector = new Telemachus.VesselChangeDetector(false);
             Telemachus.KSPAPI api = new Telemachus.KSPAPI(Telemachus.JSONFormatterProvider.Instance, vesselChangeDetector, config, null);
 
-            List<Telemachus.APIEntry> apiList = new List<Telemachus.APIEntry>();
+            List<APIEntry> apiList = new List<APIEntry>();
             api.getAPIList(ref apiList);
 
             writeToMarkdownWiki(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Telemachus.wiki"),
                 "API-String.md", ref apiList);
         }
 
-        private void writeToMarkdownWiki(string wikiPath, string fileName, ref List<Telemachus.APIEntry> apiList)
+        private void writeToMarkdownWiki(string wikiPath, string fileName, ref List<APIEntry> apiList)
         {
             MDFile file = new MDFile(Path.Combine(wikiPath, fileName));
 
@@ -35,7 +36,7 @@ namespace TelemachusTest
                 "The API strings which are currently supported are listed below.";
             
             file.write(intro);
-            foreach (Telemachus.APIEntry apiEntry in apiList)
+            foreach (APIEntry apiEntry in apiList)
             {
                 file.writeHeading(apiEntry.APIString);
                 file.writeBody(apiEntry.name);

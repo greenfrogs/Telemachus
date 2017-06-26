@@ -60,23 +60,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="src\DataLinkHandlers\BodyDataLinkHandler.cs" />
     <Compile Include="src\DataLinkFormatters.cs" />
-    <Compile Include="src\DataLinkHandlers.cs" />
+    <Compile Include="src\DataLinkHandlers\DataLinkHandlers.cs" />
     <Compile Include="src\DataLinkResponsibility.cs" />
+    <Compile Include="src\DataLinkHandlers\DockingDataLinkHandler.cs" />
     <Compile Include="src\ElseResponsibility.cs" />
+    <Compile Include="src\DataLinkHandlers\FlightDataLinkHandler.cs" />
+    <Compile Include="src\DataLinkHandlers\FlyByWireDataLinkHandler.cs" />
     <Compile Include="src\IOPageResponsibility.cs" />
     <Compile Include="src\KSPWebServerDispatcher.cs" />
+    <Compile Include="src\DataLinkHandlers\MapViewDataLinkHandler.cs" />
+    <Compile Include="src\DataLinkHandlers\MechJebDataLinkHandler.cs" />
+    <Compile Include="src\DataLinkHandlers\NavBallDataLinkHandler.cs" />
+    <Compile Include="src\DataLinkHandlers\OrbitDataLinkHandler.cs" />
     <Compile Include="src\PluginLogger.cs" />
     <Compile Include="src\PluginRegistration.cs" />
     <Compile Include="src\Plugins\RasterPropMonitorPlugin.cs" />
+    <Compile Include="src\DataLinkHandlers\ResourceDataLinkHandler.cs" />
+    <Compile Include="src\DataLinkHandlers\SensorDataLinkHandler.cs" />
     <Compile Include="src\ServerConfiguration.cs" />
     <Compile Include="src\SimpleJSON.cs" />
+    <Compile Include="src\DataLinkHandlers\TargetDataLinkHandler.cs" />
     <Compile Include="src\TelemachusBehaviour.cs" />
     <Compile Include="src\TelemachusPartModules.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\DataLinkHandlers\TimeWarpDataLinkHandler.cs" />
     <Compile Include="src\UpLinkDownLinkRate.cs" />
     <Compile Include="src\VesselChangeDetector.cs" />
     <Compile Include="src\KSPWebSocketService.cs" />
+    <Compile Include="src\DataLinkHandlers\VesselDataLinkHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -84,6 +97,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>rd /s /q  "$(ProjectDir)..\publish\GameData"
