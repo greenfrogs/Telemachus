@@ -1,14 +1,10 @@
 ﻿//Author: Richard Bunt
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 using System.Reflection;
-using System.Threading;
-using System.Collections;
 using UnityEngine;
 using KSP.UI.Screens;
-using KSP.UI.Util;
 
 namespace Telemachus
 {

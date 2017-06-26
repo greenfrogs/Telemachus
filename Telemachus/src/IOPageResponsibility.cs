@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Text;
 using WebSocketSharp.Net;
 using WebSocketSharp;
-using KSP.IO;
 using System.IO;
 
 namespace Telemachus

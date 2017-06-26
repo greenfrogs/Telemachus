@@ -1,11 +1,6 @@
 ﻿//Author: Richard Bunt
 using System;
 using UnityEngine;
-using KSP.IO;
-using System.Net;
-using System.Text;
-using System.Collections.Generic;
-using System.Collections;
 
 namespace Telemachus
 {

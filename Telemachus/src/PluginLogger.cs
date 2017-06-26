@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 using UnityEngine;
 
 namespace Telemachus
@@ -27,7 +26,7 @@ namespace Telemachus
 
         public static void print(String s)
         {
-            UnityEngine.Debug.Log("[Telemachus] " + s);
+            Debug.Log("[Telemachus] " + s);
             Console.WriteLine(Assembly.GetExecutingAssembly().FullName);
         }
 

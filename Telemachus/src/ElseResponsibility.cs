@@ -1,9 +1,6 @@
 ﻿//Author: Richard Bunt
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using WebSocketSharp;
 using WebSocketSharp.Net;
 
 namespace Telemachus
