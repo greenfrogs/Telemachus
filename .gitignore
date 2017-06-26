@@ -3,8 +3,7 @@ obj
 Telemachus.wiki
 publish
 images
-*.v11.suo
+*.suo
 Leaflet.KSP
 ksp-telemachus-dev
-Telemachus.v12.suo
-WebPages/WebPages.v12.suo
+.vs/
