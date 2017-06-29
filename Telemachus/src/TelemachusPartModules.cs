@@ -111,7 +111,7 @@ namespace Telemachus
             }
             else
             {
-
+                //TODO: Check if statusString should be set to "Enabled" here
                 activeToggle = true;
             }
         }

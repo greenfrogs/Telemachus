@@ -40,6 +40,7 @@ namespace Telemachus
 
         #region Accessors
 
+        //TODO: Check if list size should be limited so only the last x data values are taken into consideration -> linked list could be replaced by other data structure
         /// <summary>Add a data point for bytes recieved from the client (UPlink)</summary>
         public void RecieveDataFromClient(int bytes)
         {
